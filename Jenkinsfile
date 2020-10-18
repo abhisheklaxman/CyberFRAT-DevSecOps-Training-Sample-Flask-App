@@ -1,9 +1,9 @@
 pipeline {
  agent any
   stages {
-    Stage (' Build Docker Image ') {
-    Steps {
-      sh  'docker build -t cyberfrat:$Build_Number .'
+    stage ('Build Docker Image') {
+     steps {
+      sh  'docker build -t cyberfrat:$Build_Number .' 
       }
      }
     }
